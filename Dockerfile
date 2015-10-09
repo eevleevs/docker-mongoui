@@ -9,4 +9,4 @@ WORKDIR /mongoui
 ADD boot.sh /mongoui/
 
 EXPOSE 3000
-CMD boot.sh
+CMD /mongoui/boot.sh
