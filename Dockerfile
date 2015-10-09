@@ -6,7 +6,7 @@ RUN apt-get update && \
     git clone https://github.com/azat-co/mongoui.git && \
     apt-get clean all
 WORKDIR /mongoui
-ADD boot.sh .
+ADD boot.sh /mongoui/
 
 EXPOSE 3000
 CMD boot.sh
